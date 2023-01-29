@@ -8,24 +8,96 @@
 
 /* Begin PBXBuildFile section */
 		442612EA298555E40035B984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442612E9298555E40035B984 /* AppDelegate.swift */; };
-		442612EC298555E40035B984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442612EB298555E40035B984 /* SceneDelegate.swift */; };
-		442612EE298555E40035B984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442612ED298555E40035B984 /* ViewController.swift */; };
 		442612F1298555E40035B984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442612EF298555E40035B984 /* Main.storyboard */; };
 		442612F4298555E40035B984 /* TryCarApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442612F2298555E40035B984 /* TryCarApp.xcdatamodeld */; };
 		442612F6298555E60035B984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442612F5298555E60035B984 /* Assets.xcassets */; };
 		442612F9298555E60035B984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442612F7298555E60035B984 /* LaunchScreen.storyboard */; };
+		4426130F29855EB40035B984 /* PostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426130E29855EB40035B984 /* PostsModel.swift */; };
+		4426131129855F270035B984 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426131029855F270035B984 /* ErrorModel.swift */; };
+		4426131329855F570035B984 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426131229855F570035B984 /* Config.swift */; };
+		4426131529855F8F0035B984 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426131429855F8F0035B984 /* Target.swift */; };
+		4426131729855FA70035B984 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426131629855FA70035B984 /* BaseAPI.swift */; };
+		44261319298560240035B984 /* NibCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261318298560240035B984 /* NibCells.swift */; };
+		4426131B298567140035B984 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426131A298567140035B984 /* Extension.swift */; };
+		4426131D2985673B0035B984 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426131C2985673B0035B984 /* Storyboard.swift */; };
+		44261323298568A50035B984 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261322298568A50035B984 /* TabBarPresenter.swift */; };
+		44261325298568E00035B984 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261324298568E00035B984 /* HomeTabBar.swift */; };
+		44261327298569170035B984 /* HomeTabBar+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261326298569170035B984 /* HomeTabBar+PresenterDelegate.swift */; };
+		4426132B29856BAD0035B984 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426132929856BAD0035B984 /* PostsCell.swift */; };
+		4426132C29856BAD0035B984 /* PostsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4426132A29856BAD0035B984 /* PostsCell.xib */; };
+		4426132E29856C9A0035B984 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426132D29856C9A0035B984 /* PostsVC.swift */; };
+		4426133029856CCB0035B984 /* PostsVC+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426132F29856CCB0035B984 /* PostsVC+TableViewDelegate.swift */; };
+		4426133229856CDC0035B984 /* PostsVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426133129856CDC0035B984 /* PostsVC+PresenterDelegate.swift */; };
+		4426133429856CF00035B984 /* PostsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426133329856CF00035B984 /* PostsVCPresenter.swift */; };
+		4426133629856CFB0035B984 /* PostsVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426133529856CFB0035B984 /* PostsVCRouter.swift */; };
+		4426133829856D0D0035B984 /* PostsVCInteractorNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426133729856D0D0035B984 /* PostsVCInteractorNetwork.swift */; };
+		4426133A29856D1B0035B984 /* PostsVCInteractorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426133929856D1B0035B984 /* PostsVCInteractorAPI.swift */; };
+		4426134129857FFC0035B984 /* SelectedPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426134029857FFC0035B984 /* SelectedPostVC.swift */; };
+		44261343298580510035B984 /* SelectedPostVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261342298580510035B984 /* SelectedPostVC+PresenterDelegate.swift */; };
+		44261345298580950035B984 /* SelectedPostVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261344298580950035B984 /* SelectedPostVCPresenter.swift */; };
+		44261347298580A00035B984 /* SelectedPostVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261346298580A00035B984 /* SelectedPostVCRouter.swift */; };
+		44261349298580B10035B984 /* SelectedPostVCInteractorNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261348298580B10035B984 /* SelectedPostVCInteractorNetwork.swift */; };
+		4426134B298580C00035B984 /* SelectedPostVCInteractorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426134A298580C00035B984 /* SelectedPostVCInteractorAPI.swift */; };
+		4426134D298582B90035B984 /* PostDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426134C298582B90035B984 /* PostDetailsModel.swift */; };
+		442613512985837A0035B984 /* SelectedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426134F2985837A0035B984 /* SelectedPostCell.swift */; };
+		442613522985837A0035B984 /* SelectedPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442613502985837A0035B984 /* SelectedPostCell.xib */; };
+		442613542985886A0035B984 /* SelectedPostVC+TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442613532985886A0035B984 /* SelectedPostVC+TableDelegate.swift */; };
+		44261359298592DA0035B984 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44261358298592DA0035B984 /* DataManager.swift */; };
+		442613602985CC9B0035B984 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426135F2985CC9B0035B984 /* FavoritesVC.swift */; };
+		442613622985CCB00035B984 /* FavoritesVC+TableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442613612985CCB00035B984 /* FavoritesVC+TableDelegate.swift */; };
+		442613642985CCBF0035B984 /* FavoritesVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442613632985CCBF0035B984 /* FavoritesVC+PresenterDelegate.swift */; };
+		442613662985CCCB0035B984 /* FavoritesVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442613652985CCCB0035B984 /* FavoritesVCPresenter.swift */; };
+		442613682985CCDD0035B984 /* FavoritesVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442613672985CCDD0035B984 /* FavoritesVCRouter.swift */; };
+		B2148DF53D2CB81940C0ACB8 /* Pods_TryCarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5F0E1C8FD7EA74EDD6FBC2 /* Pods_TryCarApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		442612E6298555E40035B984 /* TryCarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryCarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442612E9298555E40035B984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		442612EB298555E40035B984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		442612ED298555E40035B984 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		442612F0298555E40035B984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		442612F3298555E40035B984 /* TryCarApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TryCarApp.xcdatamodel; sourceTree = "<group>"; };
 		442612F5298555E60035B984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442612F8298555E60035B984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442612FA298555E60035B984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4426130E29855EB40035B984 /* PostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModel.swift; sourceTree = "<group>"; };
+		4426131029855F270035B984 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		4426131229855F570035B984 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4426131429855F8F0035B984 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		4426131629855FA70035B984 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		44261318298560240035B984 /* NibCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibCells.swift; sourceTree = "<group>"; };
+		4426131A298567140035B984 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4426131C2985673B0035B984 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		44261322298568A50035B984 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		44261324298568E00035B984 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		44261326298569170035B984 /* HomeTabBar+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTabBar+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		4426132929856BAD0035B984 /* PostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
+		4426132A29856BAD0035B984 /* PostsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsCell.xib; sourceTree = "<group>"; };
+		4426132D29856C9A0035B984 /* PostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		4426132F29856CCB0035B984 /* PostsVC+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostsVC+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		4426133129856CDC0035B984 /* PostsVC+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostsVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		4426133329856CF00035B984 /* PostsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVCPresenter.swift; sourceTree = "<group>"; };
+		4426133529856CFB0035B984 /* PostsVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVCRouter.swift; sourceTree = "<group>"; };
+		4426133729856D0D0035B984 /* PostsVCInteractorNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVCInteractorNetwork.swift; sourceTree = "<group>"; };
+		4426133929856D1B0035B984 /* PostsVCInteractorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVCInteractorAPI.swift; sourceTree = "<group>"; };
+		4426134029857FFC0035B984 /* SelectedPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostVC.swift; sourceTree = "<group>"; };
+		44261342298580510035B984 /* SelectedPostVC+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedPostVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		44261344298580950035B984 /* SelectedPostVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostVCPresenter.swift; sourceTree = "<group>"; };
+		44261346298580A00035B984 /* SelectedPostVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostVCRouter.swift; sourceTree = "<group>"; };
+		44261348298580B10035B984 /* SelectedPostVCInteractorNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostVCInteractorNetwork.swift; sourceTree = "<group>"; };
+		4426134A298580C00035B984 /* SelectedPostVCInteractorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostVCInteractorAPI.swift; sourceTree = "<group>"; };
+		4426134C298582B90035B984 /* PostDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsModel.swift; sourceTree = "<group>"; };
+		4426134F2985837A0035B984 /* SelectedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPostCell.swift; sourceTree = "<group>"; };
+		442613502985837A0035B984 /* SelectedPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedPostCell.xib; sourceTree = "<group>"; };
+		442613532985886A0035B984 /* SelectedPostVC+TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedPostVC+TableDelegate.swift"; sourceTree = "<group>"; };
+		44261358298592DA0035B984 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4426135F2985CC9B0035B984 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		442613612985CCB00035B984 /* FavoritesVC+TableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesVC+TableDelegate.swift"; sourceTree = "<group>"; };
+		442613632985CCBF0035B984 /* FavoritesVC+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		442613652985CCCB0035B984 /* FavoritesVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVCPresenter.swift; sourceTree = "<group>"; };
+		442613672985CCDD0035B984 /* FavoritesVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVCRouter.swift; sourceTree = "<group>"; };
+		8B4D4C70ED28EDDAAC3C57F8 /* Pods-TryCarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryCarApp.release.xcconfig"; path = "Target Support Files/Pods-TryCarApp/Pods-TryCarApp.release.xcconfig"; sourceTree = "<group>"; };
+		ED5F0E1C8FD7EA74EDD6FBC2 /* Pods_TryCarApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryCarApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C8948580F638942D5FA5B9 /* Pods-TryCarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryCarApp.debug.xcconfig"; path = "Target Support Files/Pods-TryCarApp/Pods-TryCarApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2148DF53D2CB81940C0ACB8 /* Pods_TryCarApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +117,8 @@
 			children = (
 				442612E8298555E40035B984 /* TryCarApp */,
 				442612E7298555E40035B984 /* Products */,
+				88D405C5445BA6409D4CD6DB /* Pods */,
+				527ACC7FFCEF268273B6512D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +133,291 @@
 		442612E8298555E40035B984 /* TryCarApp */ = {
 			isa = PBXGroup;
 			children = (
-				442612E9298555E40035B984 /* AppDelegate.swift */,
-				442612EB298555E40035B984 /* SceneDelegate.swift */,
-				442612ED298555E40035B984 /* ViewController.swift */,
-				442612EF298555E40035B984 /* Main.storyboard */,
-				442612F5298555E60035B984 /* Assets.xcassets */,
-				442612F7298555E60035B984 /* LaunchScreen.storyboard */,
-				442612FA298555E60035B984 /* Info.plist */,
-				442612F2298555E40035B984 /* TryCarApp.xcdatamodeld */,
+				44261306298557820035B984 /* Resources */,
+				442613052985577B0035B984 /* Utilites */,
+				44261304298557700035B984 /* Network */,
+				442613022985575C0035B984 /* Extensions */,
+				442613012985574E0035B984 /* SupportingFiles */,
+				44261357298592C60035B984 /* CoreData */,
+				4426130D29855EA30035B984 /* Model */,
+				442613002985573F0035B984 /* Scenes */,
 			);
 			path = TryCarApp;
+			sourceTree = "<group>";
+		};
+		442613002985573F0035B984 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4426130829855E100035B984 /* Storyboard */,
+				4426135A2985CC670035B984 /* Favorites */,
+				4426133B29857FB40035B984 /* SelectedPost */,
+				4426130729855DF90035B984 /* Posts */,
+				4426131E298568660035B984 /* TabBar */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		442613012985574E0035B984 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4426131C2985673B0035B984 /* Storyboard.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		442613022985575C0035B984 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44261318298560240035B984 /* NibCells.swift */,
+				4426131A298567140035B984 /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44261304298557700035B984 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4426131629855FA70035B984 /* BaseAPI.swift */,
+				4426131429855F8F0035B984 /* Target.swift */,
+				4426131229855F570035B984 /* Config.swift */,
+				4426131029855F270035B984 /* ErrorModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		442613052985577B0035B984 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				442612E9298555E40035B984 /* AppDelegate.swift */,
+				442612F2298555E40035B984 /* TryCarApp.xcdatamodeld */,
+				442612FA298555E60035B984 /* Info.plist */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		44261306298557820035B984 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				442612F5298555E60035B984 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4426130729855DF90035B984 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				4426130C29855E3E0035B984 /* Interactor */,
+				4426130B29855E350035B984 /* Router */,
+				4426130A29855E2E0035B984 /* Presenter */,
+				4426130929855E250035B984 /* View */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		4426130829855E100035B984 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				442612F7298555E60035B984 /* LaunchScreen.storyboard */,
+				442612EF298555E40035B984 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		4426130929855E250035B984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4426132D29856C9A0035B984 /* PostsVC.swift */,
+				4426132F29856CCB0035B984 /* PostsVC+TableViewDelegate.swift */,
+				4426133129856CDC0035B984 /* PostsVC+PresenterDelegate.swift */,
+				4426132829856B980035B984 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4426130A29855E2E0035B984 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4426133329856CF00035B984 /* PostsVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4426130B29855E350035B984 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4426133529856CFB0035B984 /* PostsVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4426130C29855E3E0035B984 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4426133729856D0D0035B984 /* PostsVCInteractorNetwork.swift */,
+				4426133929856D1B0035B984 /* PostsVCInteractorAPI.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4426130D29855EA30035B984 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4426130E29855EB40035B984 /* PostsModel.swift */,
+				4426134C298582B90035B984 /* PostDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4426131E298568660035B984 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				44261320298568880035B984 /* Presenter */,
+				4426131F298568820035B984 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4426131F298568820035B984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44261324298568E00035B984 /* HomeTabBar.swift */,
+				44261326298569170035B984 /* HomeTabBar+PresenterDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44261320298568880035B984 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				44261322298568A50035B984 /* TabBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4426132829856B980035B984 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4426132929856BAD0035B984 /* PostsCell.swift */,
+				4426132A29856BAD0035B984 /* PostsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4426133B29857FB40035B984 /* SelectedPost */ = {
+			isa = PBXGroup;
+			children = (
+				4426133F29857FE70035B984 /* Interactor */,
+				4426133E29857FE30035B984 /* Router */,
+				4426133D29857FDB0035B984 /* Presenter */,
+				4426133C29857FD60035B984 /* View */,
+			);
+			path = SelectedPost;
+			sourceTree = "<group>";
+		};
+		4426133C29857FD60035B984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4426134029857FFC0035B984 /* SelectedPostVC.swift */,
+				442613532985886A0035B984 /* SelectedPostVC+TableDelegate.swift */,
+				44261342298580510035B984 /* SelectedPostVC+PresenterDelegate.swift */,
+				4426134E298583600035B984 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4426133D29857FDB0035B984 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				44261344298580950035B984 /* SelectedPostVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4426133E29857FE30035B984 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				44261346298580A00035B984 /* SelectedPostVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4426133F29857FE70035B984 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				44261348298580B10035B984 /* SelectedPostVCInteractorNetwork.swift */,
+				4426134A298580C00035B984 /* SelectedPostVCInteractorAPI.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4426134E298583600035B984 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4426134F2985837A0035B984 /* SelectedPostCell.swift */,
+				442613502985837A0035B984 /* SelectedPostCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		44261357298592C60035B984 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				44261358298592DA0035B984 /* DataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4426135A2985CC670035B984 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				4426135D2985CC7C0035B984 /* Router */,
+				4426135C2985CC760035B984 /* Presenter */,
+				4426135B2985CC710035B984 /* View */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		4426135B2985CC710035B984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4426135F2985CC9B0035B984 /* FavoritesVC.swift */,
+				442613612985CCB00035B984 /* FavoritesVC+TableDelegate.swift */,
+				442613632985CCBF0035B984 /* FavoritesVC+PresenterDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4426135C2985CC760035B984 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				442613652985CCCB0035B984 /* FavoritesVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4426135D2985CC7C0035B984 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				442613672985CCDD0035B984 /* FavoritesVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		527ACC7FFCEF268273B6512D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED5F0E1C8FD7EA74EDD6FBC2 /* Pods_TryCarApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88D405C5445BA6409D4CD6DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0C8948580F638942D5FA5B9 /* Pods-TryCarApp.debug.xcconfig */,
+				8B4D4C70ED28EDDAAC3C57F8 /* Pods-TryCarApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +427,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 442612FD298555E60035B984 /* Build configuration list for PBXNativeTarget "TryCarApp" */;
 			buildPhases = (
+				8AC92F6524751E9D04F1695C /* [CP] Check Pods Manifest.lock */,
 				442612E2298555E40035B984 /* Sources */,
 				442612E3298555E40035B984 /* Frameworks */,
 				442612E4298555E40035B984 /* Resources */,
+				308D7FFEF36B421D402A02D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,20 +483,96 @@
 				442612F9298555E60035B984 /* LaunchScreen.storyboard in Resources */,
 				442612F6298555E60035B984 /* Assets.xcassets in Resources */,
 				442612F1298555E40035B984 /* Main.storyboard in Resources */,
+				4426132C29856BAD0035B984 /* PostsCell.xib in Resources */,
+				442613522985837A0035B984 /* SelectedPostCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		308D7FFEF36B421D402A02D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TryCarApp/Pods-TryCarApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TryCarApp/Pods-TryCarApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TryCarApp/Pods-TryCarApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC92F6524751E9D04F1695C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TryCarApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		442612E2298555E40035B984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442613512985837A0035B984 /* SelectedPostCell.swift in Sources */,
+				442613642985CCBF0035B984 /* FavoritesVC+PresenterDelegate.swift in Sources */,
+				44261359298592DA0035B984 /* DataManager.swift in Sources */,
+				4426133829856D0D0035B984 /* PostsVCInteractorNetwork.swift in Sources */,
+				4426133229856CDC0035B984 /* PostsVC+PresenterDelegate.swift in Sources */,
+				4426131B298567140035B984 /* Extension.swift in Sources */,
+				4426131529855F8F0035B984 /* Target.swift in Sources */,
+				44261343298580510035B984 /* SelectedPostVC+PresenterDelegate.swift in Sources */,
 				442612F4298555E40035B984 /* TryCarApp.xcdatamodeld in Sources */,
-				442612EE298555E40035B984 /* ViewController.swift in Sources */,
+				442613622985CCB00035B984 /* FavoritesVC+TableDelegate.swift in Sources */,
+				442613542985886A0035B984 /* SelectedPostVC+TableDelegate.swift in Sources */,
+				4426133629856CFB0035B984 /* PostsVCRouter.swift in Sources */,
+				442613602985CC9B0035B984 /* FavoritesVC.swift in Sources */,
+				4426134B298580C00035B984 /* SelectedPostVCInteractorAPI.swift in Sources */,
 				442612EA298555E40035B984 /* AppDelegate.swift in Sources */,
-				442612EC298555E40035B984 /* SceneDelegate.swift in Sources */,
+				44261323298568A50035B984 /* TabBarPresenter.swift in Sources */,
+				4426133029856CCB0035B984 /* PostsVC+TableViewDelegate.swift in Sources */,
+				4426134129857FFC0035B984 /* SelectedPostVC.swift in Sources */,
+				4426133429856CF00035B984 /* PostsVCPresenter.swift in Sources */,
+				4426132B29856BAD0035B984 /* PostsCell.swift in Sources */,
+				4426134D298582B90035B984 /* PostDetailsModel.swift in Sources */,
+				44261327298569170035B984 /* HomeTabBar+PresenterDelegate.swift in Sources */,
+				4426131329855F570035B984 /* Config.swift in Sources */,
+				4426132E29856C9A0035B984 /* PostsVC.swift in Sources */,
+				442613682985CCDD0035B984 /* FavoritesVCRouter.swift in Sources */,
+				44261347298580A00035B984 /* SelectedPostVCRouter.swift in Sources */,
+				44261345298580950035B984 /* SelectedPostVCPresenter.swift in Sources */,
+				4426131129855F270035B984 /* ErrorModel.swift in Sources */,
+				4426133A29856D1B0035B984 /* PostsVCInteractorAPI.swift in Sources */,
+				4426131D2985673B0035B984 /* Storyboard.swift in Sources */,
+				44261349298580B10035B984 /* SelectedPostVCInteractorNetwork.swift in Sources */,
+				44261325298568E00035B984 /* HomeTabBar.swift in Sources */,
+				44261319298560240035B984 /* NibCells.swift in Sources */,
+				442613662985CCCB0035B984 /* FavoritesVCPresenter.swift in Sources */,
+				4426130F29855EB40035B984 /* PostsModel.swift in Sources */,
+				4426131729855FA70035B984 /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +714,7 @@
 		};
 		442612FE298555E60035B984 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C8948580F638942D5FA5B9 /* Pods-TryCarApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,12 +722,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9988Q635WY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TryCarApp/Info.plist;
+				INFOPLIST_FILE = /Users/eissa/Desktop/TryCarApp/TryCarApp/Utilites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +744,7 @@
 		};
 		442612FF298555E60035B984 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B4D4C70ED28EDDAAC3C57F8 /* Pods-TryCarApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,12 +752,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9988Q635WY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TryCarApp/Info.plist;
+				INFOPLIST_FILE = /Users/eissa/Desktop/TryCarApp/TryCarApp/Utilites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
